@@ -1,0 +1,112 @@
+/* intro*/
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 30, 30);
+    width: 100%;
+    height: 100vh;
+    gap: 4%;
+}
+
+.intro h1, p, h2, h3 {
+    margin-bottom: 4%;
+}
+
+.intro h1 {
+    padding-left: 10%;
+    font-size: 5vh;
+}
+
+.intro h3 {
+    padding-left: 20%;
+    color: rgb(121, 90, 121);
+}
+
+.intro h2 {
+font-size: 3vh;
+padding-right: 10%;
+}
+
+.intro section {
+    border-radius: 30%;
+    color: whitesmoke;
+    margin-top: 15%;
+    text-align: center;
+    width: 80%;
+    height: 80vh;
+    padding-top: 20px;
+}
+
+.intro img {
+    height: 55vh;
+    width: 55vh;
+}
+/* main - slider */
+
+.img-txt h2{
+    font-size: 55px;
+    padding-top: 4%;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    background-color:  rgb(218, 218, 218);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(218, 218, 218);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+main section {
+    margin-top: 4%;
+    border-radius: 4%;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(31, 30, 30);
+    justify-content: center; 
+    align-items: center; 
+    gap: 7%;
+}
+
+figure {
+    margin: 0;
+    width: 25%;
+    height: 60%;
+    background-color: red;
+}
+
+figure img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* aside */
+aside {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150vh;
+    background-color: aqua;
+    gap: 3%;
+}
+
+aside section {
+    background-color: red;
+    width: 75%;
+    height: 70vh;
+    padding: 5%;
+}

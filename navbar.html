@@ -1,0 +1,78 @@
+<nav>
+    <section id="container">
+        <div id="left-s">
+            <div>
+                <img id="logo" src="/imgs/logo.png" alt="">
+            </div>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link" href="other.html">Services</a>
+        </div>
+    </section>
+
+    <style>
+        /* Container holding both sides */
+        #container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgb(31, 30, 30);
+            color: white;
+            padding: 0 1%;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 9vh;
+            z-index: 1000;
+        }
+
+        /* Left side */
+        #left-s {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        #logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        #logo:hover {
+            content: url('./imgs/20th-century-boys-wallpaper-GLOW.png');
+        }
+
+        #left-s a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        #left-s a:hover {
+            font-weight: bold;
+        }
+  
+
+        /* Fade-out animation */
+        .fade-out {
+            transform: translateX(-100%);
+            transition: transform 1s ease-out;
+        }
+    </style>
+
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();   
+
+                document.body.classList.add('fade-out');
+
+                setTimeout(() => {
+                    window.location.href = link.href;
+                }, 1000); 
+            });
+        });
+    </script>
+</nav>
