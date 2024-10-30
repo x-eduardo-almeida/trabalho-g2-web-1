@@ -25,21 +25,29 @@
             </section>
         </div>
         <!-- image slider :) -->  
+         <!--ARRUMAR DPS | SLIDER COM UMA FOTO APENAS -->
          <div class="img-txt">
             <h2>IMAGES</h2>
          </div>
         <main>
-            <section>
-                <figure>
-                    <img alt="placeholder" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjI3lRjeOzOEettfuTSjy37Zb55iUpoHuQg&s">
-                </figure>
-                <figure>
-                    <img alt="placeholder" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjI3lRjeOzOEettfuTSjy37Zb55iUpoHuQg&s">
-                </figure>
-                <figure>
-                    <img alt="placeholder" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjI3lRjeOzOEettfuTSjy37Zb55iUpoHuQg&s">
-                </figure>
+            <section class="slider">
+                <div class="slider-scrollable">
+                    <figure>
+                        <img alt="placeholder" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjI3lRjeOzOEettfuTSjy37Zb55iUpoHuQg&s">
+                    </figure>
+                    <figure>
+                        <img alt="placeholder" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjI3lRjeOzOEettfuTSjy37Zb55iUpoHuQg&s">
+                    </figure>
+                    <figure class="active">
+                        <img alt="placeholder" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjI3lRjeOzOEettfuTSjy37Zb55iUpoHuQg&s">
+                    </figure>
+                    <figure>
+                        <img alt="placeholder" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjI3lRjeOzOEettfuTSjy37Zb55iUpoHuQg&s">
+                    </figure>
+                </div>
             </section>
+            <button onclick="sliderRight()">Direita</button>
+            <button onclick="slider()">Esquerda</button>
         </main>
         <!-- content :) -->
         <aside>
@@ -56,6 +64,7 @@
         </aside>
 
     <!-- navbar script :) -->
+    <script src="slider.js"></script>
     <script src="navbarImporter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
