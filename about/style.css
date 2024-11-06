@@ -1,0 +1,38 @@
+:root {
+    --primary-bg-color: rgb(31, 30, 30);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 30, 30);
+}
+
+main {
+    margin-top: 100px;
+    height: 80vh;
+}
+main .side-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main .side-content .left {
+    width: 50%;
+    color: rgb(255,255,255);
+}
+
+main .side-content .left h1 {
+    font-size: 3.5rem;
+    color: rgb(121, 90, 121);
+}
+main .side-content .left p {
+    font-size: 1.3rem;
+    padding-top: 50px;
+}
+
+main .side-content .right .img-terapy{
+    width: 600px;
+    border-radius: 50%;
+    box-shadow: 20px 20px 30px rgb(15, 15, 15);
+}
