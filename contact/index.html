@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    
+    <title>Contato</title>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <div class="inline-row">
+            <img/>
+            <form onsubmit="sendForms(event)">
+                <h2>Entre em contato</h2>
+                <div class="form-row">
+                    <label>E-mail: </label>
+                    <input id="email-input" type="email" placeholder="Seu e-mail" required/>
+                </div>
+                <div class="form-row">
+                    <label>Assunto: </label>
+                    <input id="about-input" type="text" placeholder="Texto aqui" required/>
+                </div>
+                <div class="form-row" id="textarea-row">
+                    <label>Descrição: </label>
+                    <textarea id="textarea-email"  placeholder="Corpo do E-mail"></textarea>
+                </div>
+                <div class="form-row" id="textarea-row"></div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="../navbarImporter.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
