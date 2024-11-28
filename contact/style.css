@@ -12,7 +12,7 @@ main {
     background-color: rgb(31, 30, 30);
 }
 
-label, h2 {
+label, h2, p {
     color: white;
 }
 form {
@@ -68,4 +68,17 @@ button {
         background-color: rgb(31, 30, 30);
         color: #8800ff;
     }
+}
+
+#display-info {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#display-text {
+    font-size: xx-large;
 }

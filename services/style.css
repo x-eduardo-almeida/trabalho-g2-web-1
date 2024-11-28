@@ -35,7 +35,7 @@ main .side-by-side img {
 .card-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
     width: 1000px;
     height: 400px;
