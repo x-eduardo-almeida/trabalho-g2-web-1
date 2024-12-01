@@ -80,5 +80,12 @@ button {
 }
 
 #display-text {
+    z-index: 1;
     font-size: xx-large;
+}
+
+#image-background {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.3;
 }
