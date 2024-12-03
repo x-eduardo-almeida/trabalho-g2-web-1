@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(31, 30, 30);
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+}
+
+:root {
+    --black: rgb(31, 30, 30);
+    --purple: rgb(121, 90, 121);
+}
+
+body span {
+    color: var(--purple);
+    font-size: 35px;
+}
+
+h1 {
+    padding-bottom: 40px;
+}
+
+main {
+    margin-top: 100px; 
+    height: 80vh;
+    background-color: var(--black);
+}
+
+main .side-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main .side-content .left {
+    width: 50%;
+    color: rgb(255, 255, 255);
+}
+
+main .side-content .left h1 {
+    font-size: 3.5rem;
+    color: var(--purple);
+}
+
+main .side-content .left p {
+    font-size: 1.3rem;
+    padding-top: 50px;
+}
+
+main .side-content .right .img-terapy {
+    width: 600px;
+    border-radius: 50%;
+    box-shadow: 20px 20px 30px rgb(15, 15, 15);
+}

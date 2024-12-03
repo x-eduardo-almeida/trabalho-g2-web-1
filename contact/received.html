@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    
+    <title>Contato</title>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <main>
+        <div id="display-info">
+            <p id="display-text">
+
+            </p>
+            <button onclick={onButtonClick()}>Voltar para página Inicial</button>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="../navbarImporter.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const text = `Caro(a) senhor(a) ${params.get('name')} sua mensagem foi enviada com sucesso!`
+        document.getElementById('display-text').textContent = text;
+
+        const onButtonClick = (e) => {
+            window.location.replace("http://127.0.0.1:5500/");
+        }
+    </script>
+</body>
+</html>
