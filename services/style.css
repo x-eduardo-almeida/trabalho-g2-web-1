@@ -39,7 +39,7 @@ main .side-by-side img {
 .card-container {
     display: flex;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 40px;
     width: 100%;
 }
 

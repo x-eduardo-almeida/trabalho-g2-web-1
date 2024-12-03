@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(31, 30, 30);
 }
 
 main {
@@ -12,13 +13,8 @@ main {
 }
 
 label, h2, p {
-    color: whitesmoke;
+    color: white;
 }
-
-form h2 {
-    color: whitesmoke;
-}
-
 form {
     display: flex;
     justify-content: center;
@@ -84,5 +80,12 @@ button {
 }
 
 #display-text {
+    z-index: 1;
     font-size: xx-large;
+}
+
+#image-background {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.3;
 }
