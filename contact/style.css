@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(31, 30, 30);
 }
 
 main {
@@ -13,8 +12,13 @@ main {
 }
 
 label, h2, p {
-    color: white;
+    color: whitesmoke;
 }
+
+form h2 {
+    color: whitesmoke;
+}
+
 form {
     display: flex;
     justify-content: center;
